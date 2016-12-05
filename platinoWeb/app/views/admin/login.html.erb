@@ -1,0 +1,47 @@
+<!-- Animate.css -->
+	<link rel="stylesheet" href="../../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="../../css/superfish.css">
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="../../js/modernizr-2.6.2.min.js"></script>
+<div class="container">  
+    <div class="grid">
+        <br>
+        <br>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 col-xs-12">
+            <%= form_tag '/autenticar', class: "form-signin" do %>
+               <h2 class="form-signin-heading">Inicio de sesión</h2>
+                <label for="inputEmail" class="sr-only">Correo</label>
+                <%= email_field_tag 'inputEmail', nil, class: 'form-control', placeholder: "Correo electrónico", required: 'true' %> 
+                <label for="inputPassword" class="sr-only">Clave</label>
+                <%= password_field_tag 'inputPassword', nil, class: 'form-control', placeholder: "Clave", required: 'true' %>
+                <br>
+                <%= submit_tag 'Entrar', class: "btn btn-lg btn-primary btn-block" %>
+            <% end %>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    
+    </div>
+<div class="container">
+    <div class = "grid">
+         <br>
+        <br>
+         <br>
+        <br>    
+        <div class="col-md-4"></div>
+             <div class="col-md-4 col-xs-12">
+                <span><a class="btn btn-primary btn-lg" href="../usuarios/new">Crear nuevo usuario</a></span>
+            </div>
+        
+        </div>
+    </div>
